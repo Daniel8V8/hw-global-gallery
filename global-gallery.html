@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Global Gallery | CSS</title>
+    <style>
+      body {
+        background-color: #333;
+      }
+      img {
+        width: 300px;
+        border: 20px solid white;
+        margin-right: -172px;
+        margin-left: -172px;
+
+        transform: rotate(-45deg);
+      }
+      #gallery {
+        margin-top: 200px;
+        /* border: 1px solid red; */
+        text-align: center;
+        text-shadow: 0 20px 80px rgba(0, 0, 0, 0.1);
+      }
+
+      .i-1 {
+        transform: rotate(40deg);
+        border-color: #999999;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      .i-2 {
+        transform: rotate(20deg);
+        border-color: #b3b3b3;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      .i-3 {
+        transform: rotate(0deg);
+        border-color: #cccccc;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      .i-4 {
+        transform: rotate(-40deg);
+        border-color: #e6e6e6;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+      }
+      .i-5 {
+        transform: rotate(-20deg);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .i-5:hover {
+        transform: scale(1.2) rotate(0deg);
+      }
+    </style>
+  </head>
+  <body>
+    <p id="gallery">
+      <img
+        class="i-1"
+        src="https://fastly.picsum.photos/id/456/400/600.jpg?hmac=qHwzkuVMVc5cIKJGz1rvVqjxMJL_O0i3U5HFHk9dumQ"
+        alt="#"
+      />
+      <img
+        class="i-2"
+        src="https://fastly.picsum.photos/id/584/400/600.jpg?hmac=bMTF8xouO1aUrdC1cl9gorZdv7agv88Ib9vmC09JY0Y"
+        alt="#"
+      />
+      <img
+        class="i-3"
+        src="https://fastly.picsum.photos/id/289/400/600.jpg?hmac=KvRzPLcrLsV5H7VDJ98mPOVEn06RvzAXzz-dBYMF4gs"
+        alt="#"
+      />
+      <img
+        class="i-4"
+        src="https://fastly.picsum.photos/id/696/400/600.jpg?hmac=5j3_GIXJwfgQ_v5Cdcepu_b9omMyJ94S0hK9--4MdhY"
+        alt="#"
+      />
+      <img
+        class="i-5"
+        src="https://fastly.picsum.photos/id/239/400/600.jpg?hmac=iPhV3gDG_Tz6FjDLoIbZcW2Soc4DJNbfnlhWdIIHU3w"
+        alt="#"
+      />
+    </p>
+  </body>
+</html>
